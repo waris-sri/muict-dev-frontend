@@ -1,5 +1,5 @@
 // import anything from path outside the current file
-import { Print } from "./print";
+import { Print } from "./print()";
 
 // export this function as the default (initiate first)
 export default function Home() {
