@@ -57,7 +57,7 @@ export default function Home() {
     <>
       <form>
         <div>
-          <h1> ICT Mahidol DevClub</h1>
+          <h1> MUICT DevClub</h1>
           <h2>Please enter your basic information</h2>
           <div className="input-container">
             <NumberInputs Placeholder={"Student ID"}></NumberInputs>
