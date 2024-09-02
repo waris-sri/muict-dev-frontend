@@ -14,8 +14,7 @@ html,
 button,
 input {
   font-family:
-    system-ui,
-    -apple-system,
+    "Source Sans 3" -apple-system,
     sans-serif;
 }
 
@@ -29,18 +28,13 @@ body {
 }
 
 h1 {
-  color: #167d7f;
+  color: rgb(22, 125, 127);
   font-weight: bold;
   font-stretch: 50%;
-  font-size: 50px;
+  font-size: 48px;
   text-align: center;
   margin: 4rem;
   margin-bottom: 0;
-  transition-duration: 0.5s;
-}
-
-h1:hover {
-  font-stretch: 60%;
 }
 
 h2 {
@@ -54,14 +48,14 @@ h2 {
 
 p {
   color: darkslategray;
-  margin-bottom: 1rem;
+  margin: 0;
+  padding: 0;
   text-align: justify;
 }
 
 h6 {
   color: darkslategray;
   text-align: center;
-  margin: 0;
 }
 
 .button-container {
@@ -71,30 +65,42 @@ h6 {
   gap: 10px;
 }
 
-button {
+.button-cta {
   padding: 7px 15px;
-  background-color: #167d7f;
+  background-color: rgb(22, 125, 127);
   border-radius: 10px;
   transition-duration: 0.2s;
 }
 
-button:hover {
+.button-cta:hover {
+  box-shadow: 0 5px 10px 0px rgb(210, 210, 210);
   background-color: #0f5859;
   font-weight: 700;
 }
 
+.button {
+  background-color: rgba(22, 125, 127, 0.15);
+  padding: 7px 15px;
+  border-radius: 10px;
+  transition-duration: 0.2s;
+}
+
+.button:hover {
+  font-weight: 700;
+}
+
 .input-container {
-  display: flexbox;
+  display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-  /* margin: 20px; */
 }
 
 input {
-  box-shadow: inset 0 2px 5px 0px gainsboro;
+  box-shadow: inset 0 2px 7px 0px rgb(225, 225, 225);
   width: 25rem;
-  margin: 5px 0 5px 0;
   padding: 7px 15px;
+  margin: 0.5rem;
   border-radius: 20px;
   transition-duration: 0.2s;
 }
@@ -108,5 +114,20 @@ li {
   color: darkgrey;
   font-size: 12px;
   list-style-type: disc;
-  margin-left: 20px;
+  margin-left: -2rem;
+  gap: 0;
+}
+
+small {
+  color: rgb(190, 190, 190);
+  display: flex;
+  flex-direction: column;
+  text-align: right;
+  transition: 0.2s;
+  margin-right: 5.1rem;
+  cursor: pointer;
+}
+
+small:hover {
+  font-weight: 700;
 }

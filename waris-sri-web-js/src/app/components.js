@@ -1,13 +1,31 @@
+export function CTA({ ButtonText, TextColor }) {
+  return (
+    <>
+      <button
+        type="submit"
+        className="button-cta"
+        // 2 brackets because we need to pass an object inside (JSON)
+        style={{
+          color: TextColor,
+        }}
+        required
+      >
+        {ButtonText}
+      </button>
+    </>
+  );
+}
+
 export function Buttons({ ButtonText, TextColor }) {
   return (
     <>
       <button
         type="button"
         className="button"
-        // 2 brackets because we need to pass an object inside (JSON)
         style={{
           color: TextColor,
         }}
+        required
       >
         {ButtonText}
       </button>
@@ -21,7 +39,7 @@ export function NumberInputs({ Placeholder }) {
       <input
         type="text"
         inputMode="numeric"
-        pattern="[0-9]*"
+        pattern="\d{7}$"
         placeholder={Placeholder}
         required
       ></input>

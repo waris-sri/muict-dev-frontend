@@ -1,4 +1,5 @@
 import {
+  CTA,
   Buttons,
   NumberInputs,
   PasswordInputs,
@@ -51,44 +52,47 @@ export default function Home() {
   const double = num.map((x) => x * 2);
   console.log(num, double);
 
-  /* Start HTML */
+  /* Start webpage content */
   return (
     <>
-      <div>
-        <h1> ICT Mahidol DevClub</h1>
-        <h2>Please enter your basic information</h2>
-        <div class="input-container">
-          <NumberInputs Placeholder={"Student ID"}></NumberInputs>
-          <br />
-          <TextInputs Placeholder={"First Name"}></TextInputs>
-          <br />
-          <TextInputs Placeholder={"Last Name"}></TextInputs>
-          <br />
+      <form>
+        <div>
+          <h1> ICT Mahidol DevClub</h1>
+          <h2>Please enter your basic information</h2>
+          <div className="input-container">
+            <NumberInputs Placeholder={"Student ID"}></NumberInputs>
+            <TextInputs Placeholder={"First Name"}></TextInputs>
+            <TextInputs Placeholder={"Last Name"}></TextInputs>
+          </div>
+
+          <h2>Please enter your credentials</h2>
+          <div className="input-container">
+            <TextInputs Placeholder={"Username"}></TextInputs>
+            <PasswordInputs Placeholder={"Password"}></PasswordInputs>
+            <ul>
+              <li>8–16 characters</li>
+              <li>At least 1 uppercase, 1 lowercase, and 1 number</li>
+              <li>Can contain special characters</li>
+            </ul>
+            <PasswordInputs
+              Placeholder={"Re-enter your password"}
+            ></PasswordInputs>
+          </div>
+          <div className="small"></div>
+          <small>Forgot password?</small>
+
+          <div className="button-container">
+            <CTA TextColor={"#ffffff"} ButtonText={"Register now!"}></CTA>
+          </div>
+          <h6>Already have an account?</h6>
+          <div className="button-container">
+            <Buttons
+              TextColor={"rgb(22, 125, 127)"}
+              ButtonText={"Login"}
+            ></Buttons>
+          </div>
         </div>
-        <h2>Please enter your credentials</h2>
-        <TextInputs Placeholder={"Username"}></TextInputs>
-        <br />
-        <PasswordInputs Placeholder={"Password"}></PasswordInputs>
-        <br />
-        <ul>
-          <li>8–16 characters</li>
-          <li>At least 1 uppercase, 1 lowercase, and 1 number</li>
-          <li>Can contain special characters</li>
-        </ul>
-        <PasswordInputs Placeholder={"Re-enter your password"}></PasswordInputs>
-        <br />
-        <div class="button-container">
-          <Buttons TextColor={"#ffffff"} ButtonText={"Register"}></Buttons>
-        </div>
-        <h6>Already have an account?</h6>
-        <div class="button-container">
-          <Buttons TextColor={"#ffffff"} ButtonText={"Login"}></Buttons>
-          <Buttons
-            TextColor={"#ffffff"}
-            ButtonText={"Forgot password?"}
-          ></Buttons>
-        </div>
-      </div>
+      </form>
     </>
   );
 }
