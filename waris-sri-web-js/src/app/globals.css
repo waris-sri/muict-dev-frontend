@@ -92,6 +92,20 @@ input:hover {
   font-weight: 700;
 }
 
+input:invalid:not(:placeholder-shown) {
+  background-image: url("https://www.svgrepo.com/show/522084/cross-circle.svg");
+  background-size: 17.5px;
+  background-repeat: no-repeat;
+  background-position: calc(100% - 10.5px);
+}
+
+input:valid:not(:placeholder-shown) {
+  background-image: url("https://www.svgrepo.com/show/525265/check-circle.svg");
+  background-size: 20px;
+  background-repeat: no-repeat;
+  background-position: calc(100% - 10px);
+}
+
 ul,
 li {
   color: darkgrey;

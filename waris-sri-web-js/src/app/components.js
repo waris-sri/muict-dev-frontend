@@ -33,7 +33,7 @@ export function Buttons({ ButtonText, TextColor }) {
   );
 }
 
-export function NumberInputs({ Placeholder }) {
+export function StudentID({ Placeholder }) {
   return (
     <>
       <input
@@ -41,6 +41,7 @@ export function NumberInputs({ Placeholder }) {
         inputMode="numeric"
         pattern="\d{7}$"
         placeholder={Placeholder}
+        maxLength={7}
         required
       ></input>
     </>
@@ -64,6 +65,7 @@ export function PasswordInputs({ Placeholder }) {
         pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[a-zA-Z]).{8,}$"
         minLength={8}
         maxLength={16}
+        style={{ fontFamily: "monospace" }}
         required
       />
     </>

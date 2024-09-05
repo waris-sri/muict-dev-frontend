@@ -1,7 +1,7 @@
 import {
   CTA,
   Buttons,
-  NumberInputs,
+  StudentID,
   PasswordInputs,
   TextInputs,
 } from "./components";
@@ -60,7 +60,7 @@ export default function Home() {
           <h1> MUICT DevClub</h1>
           <h2>Please enter your basic information</h2>
           <div className="input-container">
-            <NumberInputs Placeholder={"Student ID"}></NumberInputs>
+            <StudentID Placeholder={"Student ID"}></StudentID>
             <TextInputs Placeholder={"First Name"}></TextInputs>
             <TextInputs Placeholder={"Last Name"}></TextInputs>
           </div>
