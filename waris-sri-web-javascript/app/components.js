@@ -33,7 +33,7 @@ export function Buttons({ ButtonText, TextColor }) {
   );
 }
 
-export function NumberInputs({ Placeholder }) {
+export function StudentID({ Placeholder }) {
   return (
     <>
       <input
@@ -41,6 +41,7 @@ export function NumberInputs({ Placeholder }) {
         inputMode="numeric"
         pattern="\d{7}$"
         placeholder={Placeholder}
+        maxLength={7}
         required
       ></input>
     </>
