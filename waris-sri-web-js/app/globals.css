@@ -1,0 +1,115 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html,
+body {
+  height: 100dvh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: whitesmoke;
+}
+
+h1 {
+  color: rgb(22, 125, 127);
+  font-weight: bold;
+  font-size: 36px;
+  text-align: center;
+  margin: 4rem;
+  margin-bottom: 0;
+}
+
+h2 {
+  color: darkslategray;
+  font-weight: bold;
+  font-size: 22px;
+  text-align: center;
+  margin: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+p {
+  color: darkslategray;
+  margin: 0;
+  padding: 0;
+  text-align: justify;
+}
+
+h6 {
+  color: darkslategray;
+  text-align: center;
+}
+
+.button-container {
+  display: flex;
+  justify-content: center;
+  margin: 20px;
+  gap: 10px;
+}
+
+.button-cta {
+  padding: 7px 15px;
+  background-color: rgb(22, 125, 127);
+  border-radius: 10px;
+  transition-duration: 0.2s;
+}
+
+.button-cta:hover {
+  box-shadow: 0 5px 10px 0px rgb(210, 210, 210);
+  background-color: #0f5859;
+  font-weight: 700;
+}
+
+.button {
+  background-color: rgba(22, 125, 127, 0.15);
+  padding: 7px 15px;
+  border-radius: 10px;
+  transition-duration: 0.2s;
+}
+
+.button:hover {
+  font-weight: 700;
+}
+
+.input-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+input {
+  box-shadow: inset 0 2px 7px 0px rgb(225, 225, 225);
+  width: 25rem;
+  padding: 7px 15px;
+  margin: 0.5rem;
+  border-radius: 20px;
+  transition-duration: 0.2s;
+}
+
+input:hover {
+  font-weight: 700;
+}
+
+ul,
+li {
+  color: darkgrey;
+  font-size: 12px;
+  list-style-type: disc;
+  margin-left: -2rem;
+  gap: 0;
+}
+
+small {
+  color: rgb(190, 190, 190);
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  transition: 0.2s;
+  cursor: pointer;
+}
+
+small:hover {
+  font-weight: 700;
+}
