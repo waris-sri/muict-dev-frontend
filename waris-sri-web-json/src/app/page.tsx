@@ -35,12 +35,12 @@ const callJokeApi = async () => {
   //   })
   //   .catch((error: AxiosError) => {
   //     console.log(error);
-  // });
+  //   });
 };
 
 export default function Home() {
   const [myJoke, setMyJoke] = useState<Joke | null>(null);
-  // call the joke API once on each render
+  // call the joke API only once when the component mounts
   useEffect(() => {
     // set the joke as whatever returned by the API
     const getJoke = async () => {
@@ -48,7 +48,7 @@ export default function Home() {
       setMyJoke(joke);
     };
     getJoke();
-  }, []);
+  }, []); // empty dependency array ensures the effect runs only once
   // setMyJoke(callJokeApi());
 
   // const [dadJoke, setDadJoke] = useState({
@@ -88,16 +88,30 @@ export default function Home() {
         Count: {count}
       </button>
        */}
-      Joke:
-      {myJoke ? (
-        <div>
-          <p>{myJoke.id}</p>
-          <p>{myJoke.setup}</p>
-          <p>{myJoke.punchline}</p>
-        </div>
-      ) : (
-        <p>Loading…</p>
-      )}
+      <div>
+        <h1>Jokes Generator</h1>
+      </div>
+      {/* extended ternary operator */}
+      <div>
+        {myJoke ? (
+          <div>
+            <h2>{myJoke.id}.</h2>
+            <p style={{ fontWeight: "bold" }}>{myJoke.setup}</p>
+            <p>{myJoke.punchline}</p>
+            <button
+              className="button"
+              onClick={async () => {
+                const newJoke = await callJokeApi();
+                setMyJoke(newJoke);
+              }}
+            >
+              Regenerate
+            </button>
+          </div>
+        ) : (
+          <div className="loader"></div>
+        )}
+      </div>
     </div>
   );
 }
