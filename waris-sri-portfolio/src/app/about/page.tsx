@@ -1,3 +1,5 @@
+"use client";
+
 import { Link, Button } from "@chakra-ui/react";
 import { BsArrowLeft } from "react-icons/bs";
 

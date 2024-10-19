@@ -1,3 +1,5 @@
+"use client";
+
 import { Tooltip, Link, Button } from "@chakra-ui/react";
 import {
   BsInstagram,
