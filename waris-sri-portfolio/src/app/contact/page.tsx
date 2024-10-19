@@ -45,13 +45,13 @@ export default function Home() {
   ];
 
   return (
-    <div className="grid items-center justify-items-start min-h-screen pl-[20vw] pr-[20vw] bg-black">
+    <div className="grid items-center justify-items-start min-h-screen p-[5rem] md:p-[10rem] lg:p-[15rem] bg-black">
       <div className="font-bold text-3xl md:text-[2.5rem] lg:text-6xl mb-[1.5rem] md:mb-[2rem] lg:mb-[3.5rem]">
         <h1 className="animate-name text-yellow-400">Social Media</h1>
         <h1 className="animate-name text-pink-400">สื่อสังคม</h1>
         <h1 className="animate-name text-lime-400">ソーシャルメディア</h1>
         <h1 className="animate-name text-sky-400">社交媒体</h1>
-        <main className="flex flex-col gap-3 md:gap-10 mt-[3.5rem] md:mt-[5rem] lg:mt-[7rem] text-[1.5rem] md:text-[2rem]">
+        <main className="flex flex-col gap-3 md:gap-10 mt-[3.5rem] md:mt-[5rem] lg:mt-[7rem] text-[1.4rem] md:text-[2rem]">
           {socialLinks.map((link, index) => (
             <a
               key={index}
@@ -66,7 +66,7 @@ export default function Home() {
                 color="#ededed"
                 placement="bottom-start"
               >
-                <span className="gap-4">
+                <span className="gap-4 flex items-center justify-center">
                   {link.icon}
                   {link.name}
                 </span>

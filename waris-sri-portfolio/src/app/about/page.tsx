@@ -5,7 +5,7 @@ import { BsArrowLeft } from "react-icons/bs";
 
 export default function Home() {
   return (
-    <div className="grid items-center justify-items-start min-h-screen pl-[20vw] pr-[20vw] bg-black">
+    <div className="grid items-center justify-items-start min-h-screen p-[5rem] md:p-[10rem] lg:p-[15rem] bg-black">
       <div className="font-bold text-3xl md:text-[2.5rem] lg:text-6xl mb-[1.5rem] md:mb-[2rem] lg:mb-[3.5rem]">
         <h1 className="animate-name text-yellow-400">About</h1>
         <h1 className="animate-name text-pink-400">เกี่ยวกับ</h1>
