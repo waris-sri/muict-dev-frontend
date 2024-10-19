@@ -6,7 +6,7 @@ import { BsPersonFill, BsGlobe } from "react-icons/bs";
 
 export default function Home() {
   return (
-    <div className="grid items-center justify-items-start min-h-screen p-[5rem] md:p-[10rem] lg:p-[15rem] bg-black">
+    <div className="grid items-center justify-items-start min-h-screen p-[4rem] md:p-[10rem] lg:p-[15rem] bg-black">
       <main className="flex flex-col gap-8">
         <Image
           borderRadius="7px"
@@ -15,12 +15,8 @@ export default function Home() {
           alt="Waris Sripatoomrak"
         />
         <div className="font-bold text-3xl md:text-[2.5rem] lg:text-6xl mb-[1.5rem] md:mb-[2rem] lg:mb-[3.5rem]">
-          <h1 className="animate-name text-yellow-400">
-            Waris Sripatoomrak <span className="text-gray-400">(Beam)</span>
-          </h1>
-          <h1 className="animate-name text-pink-400">
-            วริศ ศรีปทุมรักษ์ <span className="text-gray-400">(บีม)</span>
-          </h1>
+          <h1 className="animate-name text-yellow-400">Waris Sripatoomrak</h1>
+          <h1 className="animate-name text-pink-400">วริศ ศรีปทุมรักษ์</h1>
           <h1 className="animate-name text-lime-400">
             <ruby>
               李<rp>(</rp>
@@ -31,7 +27,6 @@ export default function Home() {
               <rt>ぶ</rt>
               <rp>)</rp>
             </ruby>
-            <span className="text-gray-400">（ビーム）</span>
           </h1>
           <h1 className="animate-name text-sky-400">
             <ruby>
@@ -43,13 +38,6 @@ export default function Home() {
               <rt>Wǔ</rt>
               <rp>)</rp>
             </ruby>
-            <span className="text-gray-400">
-              （比<rp>(</rp>
-              <rt>Bǐ</rt>
-              <rp>)</rp>姆<rp>(</rp>
-              <rt>mǔ</rt>
-              <rp>)</rp>）
-            </span>
           </h1>
         </div>
         <p className="change-color text-md md:text-xl lg:text-2xl">
