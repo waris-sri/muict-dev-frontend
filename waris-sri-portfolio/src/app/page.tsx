@@ -1,37 +1,19 @@
 "use client";
 
+import { Button, Stack, Image } from "@chakra-ui/react";
 import Link from "next/link";
-// import { Tooltip } from "@chakra-ui/react";
-// import { BsInstagram, BsGithub, BsYoutube, BsLinkedin } from "react-icons/bs";
-// import Image from "next/image";
+import { BsPersonFill, BsGlobe } from "react-icons/bs";
 
 export default function Home() {
-  // const socialLinks = [
-  //   {
-  //     href: "https://www.instagram.com/waris.beam/",
-  //     icon: <BsInstagram />,
-  //     label: "Instagram",
-  //   },
-  //   {
-  //     href: "https://github.com/waris-sri/",
-  //     icon: <BsGithub />,
-  //     label: "GitHub",
-  //   },
-  //   {
-  //     href: "https://www.youtube.com/@warisbeam/",
-  //     icon: <BsYoutube />,
-  //     label: "YouTube",
-  //   },
-  //   {
-  //     href: "https://www.linkedin.com/in/waris-sripatoomrak-316824276/",
-  //     icon: <BsLinkedin />,
-  //     label: "LinkedIn",
-  //   },
-  // ];
-
   return (
     <div className="grid items-center justify-items-start min-h-screen pl-[20vw] pr-[20vw] bg-black">
       <main className="flex flex-col gap-8">
+        <Image
+          borderRadius="7px"
+          boxSize="101px"
+          src="https://scontent.fbkk28-1.fna.fbcdn.net/v/t39.30808-6/434143429_2493260504396319_4177468431237854609_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=6ee11a&_nc_ohc=-sYnZfrO2T8Q7kNvgHAhXXb&_nc_ht=scontent.fbkk28-1.fna&_nc_gid=AekPIyA0Nu_QiewU_vlzNRW&oh=00_AYAq7OWa4iCEpXLek8uEnnGZap0n0fztECG6GJy2vWJOnw&oe=67196160"
+          alt="Waris Sripatoomrak"
+        />
         <div className="font-bold text-3xl md:text-[2.5rem] lg:text-6xl mb-[1.5rem] md:mb-[2rem] lg:mb-[3.5rem]">
           <h1 className="animate-name text-yellow-400">
             Waris Sripatoomrak <span className="text-gray-500">(Beam)</span>
@@ -70,35 +52,31 @@ export default function Home() {
             </span>
           </h1>
         </div>
-        <p className="change-color text-sm md:text-lg lg:text-xl">
+        <p className="change-color text-md md:text-xl lg:text-2xl">
           A first-year undergraduate pursuing B.Sc. in ICT
         </p>
-        <ul>
-          <li>
-            <Link href="/contact">Contacts</Link>
-          </li>
-        </ul>
-      </main>
-      {/* <footer className="row-start-3 flex gap-6 flex-wrap items-center justify-center">
-        {socialLinks.map((link, index) => (
-          <Tooltip
-            key={index}
-            hasArrow
-            label={link.label}
-            bg="gray.600"
-            color="#ededed"
-          >
-            <a
-              className="flex items-center gap-2"
-              href={link.href}
-              target="_blank"
-              rel="noopener noreferrer"
+
+        <Stack direction="row" spacing={4}>
+          <Link href="/about">
+            <Button
+              rightIcon={<BsPersonFill />}
+              colorScheme="whiteAlpha"
+              variant="solid"
             >
-              {link.icon}
-            </a>
-          </Tooltip>
-        ))}
-      </footer> */}
+              About
+            </Button>
+          </Link>
+          <Link href="/contact">
+            <Button
+              rightIcon={<BsGlobe />}
+              colorScheme="whiteAlpha"
+              variant="solid"
+            >
+              Social Media
+            </Button>
+          </Link>
+        </Stack>
+      </main>
     </div>
   );
 }

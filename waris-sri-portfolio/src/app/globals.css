@@ -4,7 +4,7 @@
 
 :root {
   --background: #ffffff;
-  --foreground: #171717;
+  --foreground: #ededed;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -16,15 +16,14 @@
 
 main,
 footer,
-a {
+a,
+p {
   color: var(--foreground);
-  /* font-family: var(--font-geist-sans); */
 }
 
 ruby,
 span {
   display: inline-flex;
-  /* line-height: 1.5; */
 }
 
 rb,
