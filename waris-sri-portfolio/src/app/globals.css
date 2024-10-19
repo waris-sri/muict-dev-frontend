@@ -15,9 +15,127 @@
 }
 
 main,
-footer {
+footer,
+a {
   color: var(--foreground);
-  font-family: var(--font-geist-sans);
+  /* font-family: var(--font-geist-sans); */
+}
+
+ruby,
+span {
+  display: inline-flex;
+  /* line-height: 1.5; */
+}
+
+rb,
+rt {
+  display: inline;
+  font-size: 1rem;
+  line-height: 1;
+  opacity: 85%;
+}
+
+.h1-animation-wrapper {
+  position: relative;
+  height: 100px;
+  overflow: hidden;
+}
+
+.animate-name {
+  position: absolute;
+  width: auto;
+  opacity: 0;
+  transform: translateY(100px);
+  animation: floatUp 12s infinite;
+}
+
+/* English */
+.animate-name:nth-child(1) {
+  animation-delay: 0s;
+  z-index: 4;
+}
+
+/* Thai */
+.animate-name:nth-child(2) {
+  animation-delay: 3s;
+  z-index: 3;
+}
+
+/* Japanese */
+.animate-name:nth-child(3) {
+  animation-delay: 6s;
+  z-index: 2;
+}
+
+/* Chinese */
+.animate-name:nth-child(4) {
+  animation-delay: 9s;
+  z-index: 1;
+}
+
+@keyframes floatUp {
+  0% {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  10% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  25% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  30% {
+    opacity: 0;
+    transform: translateY(-40px);
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(-40px);
+  }
+}
+
+.change-color {
+  animation: cycleColors 12s infinite;
+}
+
+@keyframes cycleColors {
+  /* text-sky-400 */
+  0% {
+    color: rgb(56 189 248);
+  }
+  /* text-yellow-400 */
+  5% {
+    color: rgb(250 204 21);
+  }
+  25% {
+    color: rgb(250 204 21);
+  }
+  /* text-pink-400 */
+  30% {
+    color: rgb(244 114 182);
+  }
+  50% {
+    color: rgb(244 114 182);
+  }
+  /* text-lime-400 */
+  55% {
+    color: rgb(163 230 53);
+  }
+  75% {
+    color: rgb(163 230 53);
+  }
+  /* text-sky-400 */
+  80% {
+    color: rgb(56 189 248);
+  }
+  95% {
+    color: rgb(56 189 248);
+  }
+  100% {
+    color: rgb(56 189 248);
+  }
 }
 
 @layer utilities {

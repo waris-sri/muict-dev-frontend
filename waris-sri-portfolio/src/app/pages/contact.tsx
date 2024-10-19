@@ -1,6 +1,5 @@
 "use client";
 
-import Link from "next/link";
 // import { Tooltip } from "@chakra-ui/react";
 // import { BsInstagram, BsGithub, BsYoutube, BsLinkedin } from "react-icons/bs";
 // import Image from "next/image";
@@ -73,11 +72,7 @@ export default function Home() {
         <p className="change-color text-sm md:text-lg lg:text-xl">
           A first-year undergraduate pursuing B.Sc. in ICT
         </p>
-        <ul>
-          <li>
-            <Link href="/contact">Contacts</Link>
-          </li>
-        </ul>
+        <link rel="title" href="favicon.ico" />
       </main>
       {/* <footer className="row-start-3 flex gap-6 flex-wrap items-center justify-center">
         {socialLinks.map((link, index) => (
