@@ -16,8 +16,8 @@ export default function Home() {
             <b>Hi, I&apos;m Waris Sripatoomrak (Beam). </b>
             I&apos;m an undergraduate student at Mahidol University pursuing a
             degree in Information and Communication Technology (ICT), passionate
-            about exploring data science, algorithms, AI/ML, image processing,
-            and UI/UX design. Apart from ICT-related skills, I&apos;m also
+            about exploring data science, algorithms, image processing, and
+            UI/UX design. Apart from ICT-related skills, I&apos;m also
             interested in particle physics, linguistics, psychology, and
             self-improvement. Moreover, I have developed strong adaptability,
             management, active listening, communication, and other leadership

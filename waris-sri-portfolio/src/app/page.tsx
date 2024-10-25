@@ -1,19 +1,26 @@
 "use client";
-
 import { Button, Stack, Image } from "@chakra-ui/react";
 import Link from "next/link";
 import { BsPersonFill, BsGlobe } from "react-icons/bs";
+
+const ImageComponent = () => {
+  return (
+    <>
+      <Image
+        src="/images/pfp.jpg"
+        alt="Waris Sripatoomrak"
+        borderRadius="7px"
+        boxSize="101px"
+      />
+    </>
+  );
+};
 
 export default function Home() {
   return (
     <div className="grid items-center justify-items-start min-h-screen p-[4rem] md:p-[10rem] lg:p-[15rem] bg-black">
       <main className="flex flex-col gap-8">
-        <Image
-          borderRadius="7px"
-          boxSize="101px"
-          src="https://scontent.fbkk28-1.fna.fbcdn.net/v/t39.30808-6/434143429_2493260504396319_4177468431237854609_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=6ee11a&_nc_ohc=-sYnZfrO2T8Q7kNvgHAhXXb&_nc_ht=scontent.fbkk28-1.fna&_nc_gid=AekPIyA0Nu_QiewU_vlzNRW&oh=00_AYAq7OWa4iCEpXLek8uEnnGZap0n0fztECG6GJy2vWJOnw&oe=67196160"
-          alt="Waris Sripatoomrak"
-        />
+        <ImageComponent />
         <div className="font-bold text-3xl md:text-[2.5rem] lg:text-6xl mb-[1.5rem] md:mb-[2rem] lg:mb-[3.5rem]">
           <h1 className="animate-name text-yellow-400">Waris Sripatoomrak</h1>
           <h1 className="animate-name text-pink-400">วริศ ศรีปทุมรักษ์</h1>
