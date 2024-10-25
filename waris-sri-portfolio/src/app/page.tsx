@@ -1,4 +1,4 @@
-"use client";
+// "use client";
 import { Button, Stack, Image } from "@chakra-ui/react";
 import Link from "next/link";
 import { BsPersonFill, BsGlobe } from "react-icons/bs";
