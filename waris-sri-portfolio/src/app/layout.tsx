@@ -2,7 +2,6 @@ import type { Metadata } from "next";
 // import localFont from "next/font/local";
 import "./globals.css";
 import { Providers } from "./providers";
-import { Anuphan } from "next/font/google";
 
 // const geistSans = localFont({
 //   src: "./fonts/GeistVF.woff",
@@ -20,12 +19,6 @@ export const metadata: Metadata = {
   description: "Portfolio Website",
 };
 
-const font = Anuphan({
-  weight: ["400", "700"],
-  style: ["normal"],
-  subsets: ["latin", "thai"],
-});
-
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -35,7 +28,7 @@ export default function RootLayout({
     <html lang="en">
       <body
         // className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-        className={font.className}
+        className={"antialiased"}
       >
         <Providers>{children}</Providers>
       </body>

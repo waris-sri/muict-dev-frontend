@@ -14,11 +14,22 @@
   }
 }
 
+.font-th {
+  font-family: var(--font-ibm-plex-sans-thai);
+}
+
+.font-jp {
+  font-family: var(--font-ibm-plex-sans-jp);
+}
+
+html,
+body,
 main,
 footer,
 a,
 p {
   color: var(--foreground);
+  overscroll-behavior: none;
 }
 
 ruby,
