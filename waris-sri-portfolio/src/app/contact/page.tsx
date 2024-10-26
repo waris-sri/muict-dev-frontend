@@ -54,7 +54,7 @@ export default function Home() {
         <main className="flex flex-col gap-3 md:gap-10 mt-[3.5rem] md:mt-[5rem] lg:mt-[7rem] text-[1.4rem] md:text-[2rem]">
           {socialLinks.map((link, index) => (
             <a
-              key={index}
+              key={index} // we need `key`; place `key` at the outer layer
               className="flex flex-col sm:flex-row items-start gap-2 text-gray-500 transition-colors hover:text-[#ededed] hover:transition-colors"
               href={link.href}
               target="_blank"
