@@ -40,7 +40,7 @@ export default function Home() {
               </div>
             </div>
           </div>
-          <p className="mt-[4rem] change-color text-md md:text-xl lg:text-2xl lg:mt-[5rem] z-50 px-0 py-0 text-center">
+          <p className="mt-[3rem] change-color text-md md:text-xl md:mt-[4rem] lg:text-2xl lg:mt-[5rem] z-50 px-0 py-0 text-center">
             A first-year undergraduate pursuing B.Sc. in ICT
           </p>
         </main>
