@@ -5,7 +5,7 @@ import { BsArrowLeft } from "react-icons/bs";
 
 export default function Home() {
   return (
-    <div className="grid items-center justify-items-start min-h-screen p-[4rem] md:p-[10rem] lg:p-[15rem] bg-black">
+    <div className="grid items-center justify-items-start min-h-screen pt-0 pb-0 p-[4rem] md:p-[10rem] lg:p-[15rem] bg-black">
       <div className="font-bold text-3xl md:text-[2.5rem] lg:text-6xl mb-[1.5rem] md:mb-[2rem] lg:mb-[3.5rem]">
         <h1 className="animate-name text-yellow-400">About</h1>
         <h1 className="animate-name text-pink-400">เกี่ยวกับ</h1>
@@ -21,18 +21,17 @@ export default function Home() {
             interested in particle physics, linguistics, psychology, and
             self-improvement. Moreover, I have developed strong adaptability,
             management, active listening, communication, and other leadership
-            skills throughout my experience.
-            <br />
-            <br />
-            Looking ahead to the next few years, I&apos;m excited to apply
-            multidisciplinary concepts to practical projects and work with peers
-            and professors from diverse backgrounds.
+            skills throughout my experience. Looking ahead to the next few
+            years, I&apos;m excited to apply multidisciplinary concepts to
+            practical projects and work with peers and professors from diverse
+            backgrounds.
           </p>
           <Link href="/">
             <Button
               leftIcon={<BsArrowLeft />}
               colorScheme="gray"
               variant="link"
+              className="underline-offset-8"
             >
               Back to home
             </Button>

@@ -3,19 +3,17 @@
 @tailwind utilities;
 
 :root {
-  --background: #ffffff;
+  --background: #000000;
   --foreground: #ededed;
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0a0a0a;
+    --background: #000000;
     --foreground: #ededed;
   }
 }
 
-html,
-body,
 main,
 footer,
 a,
@@ -84,7 +82,7 @@ rt {
     opacity: 1;
     transform: translateY(0);
   }
-  25% {
+  20% {
     opacity: 1;
     transform: translateY(0);
   }
@@ -137,6 +135,37 @@ rt {
   }
   100% {
     color: rgb(56 189 248);
+  }
+}
+
+@keyframes colorCycle {
+  0% {
+    color: #facc15;
+  }
+  25% {
+    color: #f472b6;
+  }
+  50% {
+    color: #84cc16;
+  }
+  75% {
+    color: #38bdf8;
+  }
+  100% {
+    color: #facc15;
+  }
+}
+.hover\:animate-colorCycle:hover {
+  animation: colorCycle 2s linear infinite;
+}
+
+@layer components {
+  #navbar {
+    @apply fixed top-0 left-0 w-full z-50;
+  }
+
+  #footer {
+    @apply fixed bottom-0 left-0 w-full z-50;
   }
 }
 

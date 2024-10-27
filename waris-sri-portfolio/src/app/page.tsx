@@ -1,77 +1,78 @@
-// "use client";
-import { Button, Stack, Image } from "@chakra-ui/react";
-import Link from "next/link";
-import { BsPersonFill, BsGlobe } from "react-icons/bs";
-
-const ImageComponent = () => {
-  return (
-    <>
-      <Image
-        src="/images/pfp.jpg"
-        alt="Waris Sripatoomrak"
-        borderRadius="7px"
-        boxSize="101px"
-      />
-    </>
-  );
-};
+import { Image } from "@chakra-ui/react";
 
 export default function Home() {
   return (
-    <div className="grid items-center justify-items-start min-h-screen p-[4rem] md:p-[10rem] lg:p-[15rem] bg-black">
-      <main className="flex flex-col gap-8">
-        <ImageComponent />
-        <div className="font-bold text-3xl md:text-[2.5rem] lg:text-6xl mb-[1.5rem] md:mb-[2rem] lg:mb-[3.5rem]">
-          <h1 className="animate-name text-yellow-400">Waris Sripatoomrak</h1>
-          <h1 className="animate-name text-pink-400">วริศ ศรีปทุมรักษ์</h1>
-          <h1 className="animate-name text-lime-400">
-            <ruby>
-              李<rp>(</rp>
-              <rt>り</rt>
-              <rp>)</rp>学<rp>(</rp>
-              <rt>まな</rt>
-              <rp>)</rp>武<rp>(</rp>
-              <rt>ぶ</rt>
-              <rp>)</rp>
-            </ruby>
-          </h1>
-          <h1 className="animate-name text-sky-400">
-            <ruby>
-              李<rp>(</rp>
-              <rt>Lǐ</rt>
-              <rp>)</rp>学<rp>(</rp>
-              <rt>Xué</rt>
-              <rp>)</rp>武<rp>(</rp>
-              <rt>Wǔ</rt>
-              <rp>)</rp>
-            </ruby>
-          </h1>
-        </div>
-        <p className="change-color text-md md:text-xl lg:text-2xl">
-          A first-year undergraduate pursuing B.Sc. in ICT
-        </p>
-
-        <Stack direction="row" spacing={4}>
-          <Link href="/about">
-            <Button
-              rightIcon={<BsPersonFill />}
-              colorScheme="whiteAlpha"
-              variant="solid"
-            >
-              About
-            </Button>
-          </Link>
-          <Link href="/contact">
-            <Button
-              rightIcon={<BsGlobe />}
-              colorScheme="whiteAlpha"
-              variant="solid"
-            >
-              Social Media
-            </Button>
-          </Link>
-        </Stack>
-      </main>
-    </div>
+    <>
+      <Background />
+      <div className="min-h-screen flex flex-col pt-[72px]">
+        <main className="flex-grow flex flex-col items-center p-[5rem] z-10 bg-transparent">
+          <div className="h-auto flex flex-col items-center">
+            <div className="font-bold text-5xl md:text-[3rem] lg:text-6xl z-50 text-center">
+              <div className="flex flex-col items-center overflow-hidden">
+                <h1 className="animate-name text-yellow-400">
+                  Waris Sripatoomrak
+                </h1>
+                <h1 className="animate-name text-pink-400">
+                  วริศ ศรีปทุมรักษ์
+                </h1>
+                <h1 className="animate-name text-lime-400">
+                  <ruby>
+                    李<rp>(</rp>
+                    <rt>り</rt>
+                    <rp>)</rp>学<rp>(</rp>
+                    <rt>まな</rt>
+                    <rp>)</rp>武<rp>(</rp>
+                    <rt>ぶ</rt>
+                    <rp>)</rp>
+                  </ruby>
+                </h1>
+                <h1 className="animate-name text-sky-400">
+                  <ruby>
+                    李<rp>(</rp>
+                    <rt>Lǐ</rt>
+                    <rp>)</rp>学<rp>(</rp>
+                    <rt>Xué</rt>
+                    <rp>)</rp>武<rp>(</rp>
+                    <rt>Wǔ</rt>
+                    <rp>)</rp>
+                  </ruby>
+                </h1>
+              </div>
+            </div>
+          </div>
+          <p className="mt-[4rem] change-color text-lg md:text-xl lg:text-2xl lg:mt-[5rem] z-50 text-center">
+            A first-year undergraduate pursuing B.Sc. in ICT
+          </p>
+        </main>
+        <Beam />
+      </div>
+    </>
   );
 }
+
+const Background = () => {
+  return (
+    <div className="fixed inset-0 w-full h-full -z-50">
+      <Image
+        src="/images/bg.jpeg"
+        alt="Background"
+        objectFit="cover"
+        w="full"
+        h="full"
+      />
+    </div>
+  );
+};
+
+const Beam = () => {
+  return (
+    <div className="fixed bottom-0 left-0 right-0 flex justify-center">
+      <Image
+        src="/images/beam.png"
+        alt="Waris Sripatoomrak"
+        objectFit="cover"
+        h="75vh"
+      />
+    </div>
+  );
+};
