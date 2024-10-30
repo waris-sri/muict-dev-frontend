@@ -52,7 +52,7 @@ export default function Home() {
 
 const Background = () => {
   return (
-    <div className="fixed inset-0 w-full h-full -z-50">
+    <div className="scale-bg fixed inset-0 w-full h-full -z-50">
       <Image
         src="/images/bg.jpeg"
         alt="Background"
@@ -66,7 +66,7 @@ const Background = () => {
 
 const Beam = () => {
   return (
-    <div className="fixed bottom-0 left-0 right-0 flex justify-center">
+    <div className="scale-beam fixed bottom-0 left-0 right-0 flex justify-center z-20">
       <Image
         src="/images/beam.png"
         alt="Waris Sripatoomrak"
