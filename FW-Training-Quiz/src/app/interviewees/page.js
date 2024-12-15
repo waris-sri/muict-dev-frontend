@@ -24,7 +24,7 @@ export default function Check() {
         </NumberInput>
         <Link
           href={`/interviewees/${value}`}
-          className="bg-black text-white px-6 py-3 border-2 border-black hover:bg-white hover:text-black hover:italic"
+          className="text-[#fff] bg-black px-6 py-3 border-2 border-black hover:bg-white hover:text-black hover:italic"
         >
           SEE YOUR FATE
         </Link>
