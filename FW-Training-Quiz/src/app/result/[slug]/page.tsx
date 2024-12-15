@@ -111,7 +111,7 @@ export default function Page({ params }: { params: { slug: string } }) {
     const element = foundInterview;
     return (
       <>
-        <h1 className={`text-black text-[100px] text-center`}>🤗</h1>
+        <h1 className={`text-black text-[100px] text-center`}>&#x1F917;</h1>
         <h1 className={`text-black text-4xl pb-16  text-center`}>
           Welcome {element.name}!<br />
           You are passed the interview, and now you are the one of dev club in
@@ -170,7 +170,7 @@ export default function Page({ params }: { params: { slug: string } }) {
 function NotFound() {
   return (
     <>
-      <h1 className={`text-black text-[100px] text-center`}>🥹</h1>
+      <h1 className={`text-black text-[100px] text-center`}>&#x1F979;</h1>
       <h1 className={`text-black text-4xl pb-24  text-center`}>
         We are sorry to hear that <br />
         You are not the one.

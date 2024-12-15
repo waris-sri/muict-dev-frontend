@@ -19,22 +19,23 @@
     "@notionhq/client": "^2.2.13",
     "firebase": "^10.4.0",
     "framer-motion": "^10.16.4",
-    "next": "^15.1.0",
-    "notion": "^0.0.1",
-    "react": "^18",
-    "react-dom": "^18",
+    "next": "^14.2.20",
     "react-icons": "^4.11.0",
-    "react-notion-x": "^6.16.0"
+    "react-notion-x": "^7.2.5"
   },
   "devDependencies": {
-    "@types/node": "^20",
-    "@types/react": "^18",
+    "@types/node": "20.17.10",
+    "@types/react": "18.3.16",
     "@types/react-dom": "^18",
     "autoprefixer": "^10",
     "eslint": "^8",
     "eslint-config-next": "13.5.4",
     "postcss": "^8",
     "tailwindcss": "^3.3.3",
-    "typescript": "^5"
+    "typescript": "5.7.2"
+  },
+  "peerDependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
   }
 }

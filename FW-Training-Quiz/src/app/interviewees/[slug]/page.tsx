@@ -1,5 +1,3 @@
-// Server-side
-
 import React from "react";
 import { Center, Link, SimpleGrid } from "@chakra-ui/react";
 import Image from "next/image";
@@ -79,7 +77,7 @@ export default function Page({ params }: { params: { slug: string } }) {
     });
     return (
       <>
-        <h1 className={`text-black text-[100px] text-center`}>🥰</h1>
+        <h1 className={`text-black text-[100px] text-center`}>&#x1F917;</h1>
         <h1 className={`text-black text-4xl pb-16  text-center`}>
           Congratulations {element.name}!<br />
           You are eligible to be interviewed in the following team(s):
@@ -133,7 +131,7 @@ export default function Page({ params }: { params: { slug: string } }) {
 function NotFound() {
   return (
     <>
-      <h1 className={`text-black text-[100px] text-center`}>🥹</h1>
+      <h1 className={`text-black text-[100px] text-center`}>&#x1F979;</h1>
       <h1 className={`text-black text-4xl pb-24  text-center`}>
         We are sorry to hear that <br />
         You are not eligible to interview.

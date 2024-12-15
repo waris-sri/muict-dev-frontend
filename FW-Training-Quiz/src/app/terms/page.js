@@ -9,7 +9,7 @@ import {
   Divider,
 } from "@chakra-ui/react";
 
-export function Terms() {
+export default function Terms() {
   return (
     <>
       <title>Legal - Terms of Use</title>

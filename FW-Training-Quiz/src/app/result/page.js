@@ -10,6 +10,7 @@ export default function Check() {
     <>
       <div class="flex flex-col h-screen items-center justify-center">
         <h1 className={`text-black text-4xl text-center`}>Check Your Result</h1>
+
         <NumberInput
           className="py-12"
           min={6387001}

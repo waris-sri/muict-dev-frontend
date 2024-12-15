@@ -35,9 +35,7 @@ import {
 } from "react-icons/bs";
 
 import Image from "next/image";
-import { motion } from "framer-motion";
 import { usePathname } from "next/navigation";
-import { useState, useEffect } from "react";
 
 export default function WithSubnavigation() {
   const { isOpen, onToggle } = useDisclosure();
