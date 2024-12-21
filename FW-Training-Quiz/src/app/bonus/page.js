@@ -3,44 +3,49 @@ import { Radio, RadioGroup } from "@chakra-ui/react";
 import Image from "next/image";
 export default function Bonus() {
   return (
-    <div
-      style={{
-        display: "flex",
-        flexDirection: "column",
-        width: "100%",
-        padding: "5rem",
-      }}
-    >
-      <Image
-        src="https://firebasestorage.googleapis.com/v0/b/storage1-15612.appspot.com/o/ICTBuilding.png?alt=media&token=a2e64f54-b92f-4c18-b45a-e743b1fa28f2"
-        width={300}
-        height={300}
-        alt=""
-      ></Image>
-      {users.map((property) => (
-        <React.Fragment key={property.key}>
-          <h1 style={{ fontWeight: "bold" }}>({property.key + 1})</h1>
-          <h1 style={{ fontWeight: "bold" }}>{property.question}</h1>
-          <RadioGroup
-            style={{
-              marginBottom: "1rem",
-              display: "flex",
-              flexDirection: "column",
-            }}
-          >
-            {property.options.map((option, idx) => (
-              <Radio
-                key={idx}
-                value={idx.toString()}
-                style={{ marginRight: "0.5rem" }}
-              >
-                {option}
-              </Radio>
-            ))}
-          </RadioGroup>
-        </React.Fragment>
-      ))}
-    </div>
+    <>
+      <div
+        style={{
+          display: "flex",
+          flexDirection: "column",
+          width: "100%",
+          padding: "5rem",
+        }}
+      >
+        <Image
+          src="https://firebasestorage.googleapis.com/v0/b/storage1-15612.appspot.com/o/ICTBuilding.png?alt=media&token=a2e64f54-b92f-4c18-b45a-e743b1fa28f2"
+          width={300}
+          height={300}
+          alt=""
+        ></Image>
+        {users.map((property) => (
+          <React.Fragment key={property.key}>
+            <h1 style={{ fontWeight: "bold" }}>({property.key + 1})</h1>
+            <h1 style={{ fontWeight: "bold" }}>{property.question}</h1>
+            <RadioGroup
+              style={{
+                marginBottom: "1rem",
+                display: "flex",
+                flexDirection: "column",
+              }}
+            >
+              {property.options.map((option, idx) => (
+                <Radio
+                  key={idx}
+                  value={idx.toString()}
+                  style={{ marginRight: "0.5rem" }}
+                >
+                  {option}
+                </Radio>
+              ))}
+            </RadioGroup>
+          </React.Fragment>
+        ))}
+      </div>
+      <div>
+
+      </div>
+    </>
   );
 }
 
