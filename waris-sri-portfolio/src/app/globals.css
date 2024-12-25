@@ -215,6 +215,33 @@ rt {
   }
 }
 
+/* For /xmas */
+.sway {
+  animation: sway 10s ease-in-out infinite;
+}
+@keyframes sway {
+  0%,
+  100% {
+    transform: rotate(-10deg);
+  }
+  50% {
+    transform: rotate(10deg);
+  }
+}
+.scale-top {
+  animation: scaleTop 2s ease 0s 1 forwards;
+}
+@keyframes scaleTop {
+  0% {
+    transform: scale(1.5);
+    transform-origin: top;
+  }
+  100% {
+    transform: scale(1);
+    transform-origin: top;
+  }
+}
+
 @layer components {
   #navbar {
     @apply fixed top-0 left-0 w-full z-50;
