@@ -241,6 +241,17 @@ rt {
     transform-origin: top;
   }
 }
+.blur-up {
+  animation: blurUp 2s ease forwards;
+}
+@keyframes blurUp {
+  0% {
+    filter: blur(5px);
+  }
+  100% {
+    filter: blur(0);
+  }
+}
 
 @layer components {
   #navbar {
