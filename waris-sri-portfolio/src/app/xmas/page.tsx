@@ -19,7 +19,7 @@ export default function Home() {
         </div>
       </div>
       <div
-        className="flex flex-col items-center drop-shadow-lg font-bold sm:mt-[-1rem] md:mt-[7rem] lg:mt-[1rem]
+        className="flex flex-col items-center drop-shadow-lg font-bold sm:mt-[-1rem] md:mt-[7rem] lg:mt-[5rem]
         text-[1.67rem] md:text-[2.5rem] lg:text-[2.9rem] mb-[1.5rem] md:mb-[2rem] lg:mb-[3.5rem]"
       >
         <h1 className="animate-name text-red-300">🎁 Merry Christmas! ❄️</h1>
