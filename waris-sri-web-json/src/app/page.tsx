@@ -13,7 +13,7 @@ const callJokeApi = async () => {
   const config = {
     method: "get",
     maxBodyLength: Infinity,
-    url: "https://official-joke-api.appspot.com/random_joke5555555",
+    url: "https://official-joke-api.appspot.com/random_joke",
     headers: {},
   };
 
