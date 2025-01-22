@@ -1,92 +1,95 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Form</title>
-  </head>
-  <body
-    style="
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      height: 100dvh;
-      margin: 5rem;
-      font-family:
-        system-ui,
-        -apple-system,
-        sans-serif;`
-      line-height: 2rem;
-    "
-  >
-    <form>
-      <label for="studentID"> Student ID: </label>
-      <input
-        type="text"
-        inputmode="numeric"
-        pattern="[0-9]*"
-        placeholder="Student ID"
-        style="font-family: monospace"
-        required
-      />
-      <br />
-
-      <label for="year"> Year: </label>
-      <input name="year" value="1" type="radio" required checked="checked" />
-      <label for="year1"> 1 </label>
-      <input name="year" value="2" type="radio" required />
-      <label for="year2"> 2 </label>
-      <input name="year" value="3" type="radio" required />
-      <label for="year3"> 3 </label>
-      <input name="year" value="4" type="radio" required />
-      <label for="year4"> 4 </label>
-      <br />
-
-      <label for="team"> Team: </label>
-      <select name="team" required>
-        <option value="frontend">Frontend Website</option>
-        <option value="backend">Backend Website</option>
-      </select>
-      <br />
-
-      <label for="mood"> Are you happy?: </label>
-      <input type="checkbox" />
-      <br />
-
-      <label for="opinion"> Your Opinion: </label> <br />
-      <textarea
-        rows="5"
-        cols="41"
-        maxlength="100"
-        style="max-height: 200px; max-width: 400px"
-        required
-      ></textarea>
-      <br />
-
-      <label for="date-time"> Date and Time: </label> <br />
-      <input type="datetime-local" required /> <br />
-
-      <input
-        type="password"
-        id="pass"
-        placeholder="Secret Key (8–16)"
-        name="password"
-        minlength="8"
-        maxlength="16"
-        required
-      />
-      <br />
-      <button
-        type="submit"
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Form</title>
+    </head>
+    <body
         style="
-          display: flex;
-          justify-content: center;
-          align-items: center;
-          padding: 7px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100dvh;
+            margin: 5rem;
+            font-family: system-ui, -apple-system, sans-serif;
+            line-height: 2rem;
         "
-      >
-        Submit
-      </button>
-    </form>
-  </body>
+    >
+        <form>
+            <label for="studentID"> Student ID: </label>
+            <input
+                type="text"
+                inputmode="numeric"
+                pattern="[0-9]*"
+                placeholder="Student ID"
+                style="font-family: monospace"
+                required
+            />
+            <br />
+
+            <label for="year"> Year: </label>
+            <input
+                name="year"
+                value="1"
+                type="radio"
+                required
+                checked="checked"
+            />
+            <label for="year1"> 1 </label>
+            <input name="year" value="2" type="radio" required />
+            <label for="year2"> 2 </label>
+            <input name="year" value="3" type="radio" required />
+            <label for="year3"> 3 </label>
+            <input name="year" value="4" type="radio" required />
+            <label for="year4"> 4 </label>
+            <br />
+
+            <label for="team"> Team: </label>
+            <select name="team" required>
+                <option value="frontend">Frontend Website</option>
+                <option value="backend">Backend Website</option>
+            </select>
+            <br />
+
+            <label for="mood"> Are you happy?: </label>
+            <input type="checkbox" />
+            <br />
+
+            <label for="opinion"> Your Opinion: </label> <br />
+            <textarea
+                rows="5"
+                cols="41"
+                maxlength="100"
+                style="max-height: 200px; max-width: 400px"
+                required
+            ></textarea>
+            <br />
+
+            <label for="date-time"> Date and Time: </label> <br />
+            <input type="datetime-local" required /> <br />
+
+            <input
+                type="password"
+                id="pass"
+                placeholder="Secret Key (8–16)"
+                name="password"
+                minlength="8"
+                maxlength="16"
+                required
+            />
+            <br />
+            <button
+                type="submit"
+                style="
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    padding: 7px;
+                "
+            >
+                Submit
+            </button>
+        </form>
+    </body>
 </html>
