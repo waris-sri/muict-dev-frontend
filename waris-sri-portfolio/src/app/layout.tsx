@@ -8,6 +8,12 @@ import { IBM_Plex_Sans_Thai } from "next/font/google";
 export const metadata: Metadata = {
   title: "Waris Sripatoomrak",
   description: "Personal Website",
+  icons: {
+    icon: [
+      { url: "/favicon.ico" },
+      { url: "/favicon.svg", type: "image/svg+xml" },
+    ],
+  },
 };
 
 const font = IBM_Plex_Sans_Thai({
@@ -22,10 +28,6 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" data-theme="dark">
-      <head>
-        <link rel="shortcut icon" href="/favicon.ico" />
-        <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
-      </head>
       <body className={font.className}>
         <Providers>
           <Navbar />

@@ -15,13 +15,14 @@ export default function Home() {
           <p className="font-normal text-pretty text-[#ededed] text-base md:text-lg lg:text-xl">
             <b>Hi, I&apos;m Waris Sripatoomrak (Beam). </b>
             I&apos;m an undergraduate student at Mahidol University pursuing a
-            degree in Information and Communication Technology, keen to explore
-            data science, algorithms, image processing, and UI/UX design. Apart
-            from those, I&apos;m also interested in particle physics,
-            linguistics, psychology, and self-improvement. Looking ahead to the
-            next few years, I&apos;m excited to apply multidisciplinary concepts
-            to practical projects and work with peers and professors from
-            diverse backgrounds.
+            degree in Information and Communication Technology (ICT), passionate
+            about exploring DSA and NLP. Apart from ICT-related skills, I&apos;m
+            also interested in linguistics, and self-improvement. I also have
+            developed strong adaptability, management, active listening,
+            communication, and other leadership skills throughout my experience.
+            Looking ahead to the next few years, I&apos;m excited to apply
+            multidisciplinary concepts to practical projects and work with peers
+            and professors.
           </p>
           <Link href="/">
             <Button
